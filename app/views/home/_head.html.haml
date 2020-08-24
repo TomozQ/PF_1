@@ -1,4 +1,29 @@
 .head
   .head__top
-  
+    .head__top__wrapper
+      .head__top__wrapper__content1
+        %img.head__top__wrapper__content1__image
+          = image_tag src="logo.png", size: "200x59"
+      .head__top__wrapper__content2
+        フリマアプリ＆サイト DustBooooooox
+      .head__top__wrapper__content3
+        .head__top__wrapper__content3__icon
+          = icon('fas', 'box-open', class: 'head__top__wrapper__content3__icon__box')
+        .head__top__wrapper__content3__text
+          出品
+      .head__top__wrapper__content4
+        .head__top__wrapper__content4__icon
+          = icon('fas', 'heart', class: 'head__top__wrapper__content4__icon__heart')
+        .head__top__wrapper__content4__text
+          スキ
+      .head__top__wrapper__content5
+        .head__top__wrapper__content4__icon
+          = icon('fas', 'envelope-open-text', class: 'head__top__wrapper__content4__icon__heart')
+        .head__top__wrapper__content4__text
+          お問い合わせ
+      .head__top__wrapper__content6
+        %a(href="#")
+          無料会員登録
+        %a(href="#")
+          ログイン
   .head__under
