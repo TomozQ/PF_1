@@ -27,6 +27,17 @@
   color: #ff59c3;
 }
 
+@mixin HideWrapper{
+  width: 960px;
+  height: 450px;
+  background-color: #ffd9eb;
+  position: absolute;
+  top: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .head{
   width: 100%;
   &__top{
@@ -97,6 +108,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     &__wrapper{
       height: 100%;
       width: 960px;
@@ -144,6 +156,37 @@
         }
       }
     }
+    &__in-category{
+      @include HideWrapper;
+      &__wrapper{
+        width: 95%;
+        margin-bottom: 10px;
+        p{
+          color: #646166;
+          font-size: 12px;
+        }
+        &__image-box{
+          width: 157px;
+          height: 157px;
+          background-color: white;
+          display: inline-block;
+          margin: 10px;
+        }
+        a{
+          font-size: 14px;
+          color: #a6d0ff;
+          margin-left: 80px;
+          cursor: pointer;
+          text-decoration: none;
+        }
+      }
+      
+    }
+    &__in-brand{
+      @include HideWrapper;
+      display: none;
+    }
   }
+  
 }
 
