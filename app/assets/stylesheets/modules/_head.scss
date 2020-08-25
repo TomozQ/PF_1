@@ -197,6 +197,7 @@
     }
     &__in-brand{
       @include HideWrapper;
+      display: none;
       &__wrapper{
         p{
           color: #646166;
@@ -220,6 +221,7 @@
           margin: 20px 15px;
           text-align: center;
           padding-top: 8px;
+          cursor: pointer;
         }
         li.hidden{
           background-color: #ffd9eb;
