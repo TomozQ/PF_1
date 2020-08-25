@@ -197,7 +197,48 @@
     }
     &__in-brand{
       @include HideWrapper;
-      display: none;
+      &__wrapper{
+        p{
+          color: #646166;
+          margin-top: 20px;
+          margin-left: 20px;
+          font-weight: bold;
+        }
+      }
+      &__wrapper2{
+        display: flex;
+        ul{
+          margin-left: 10px;
+        }
+        li{
+          border: none;
+          width: 54px;
+          height: 40px;
+          background-color: white;
+          color: #ff59c3;
+          border-radius: 4px;
+          margin: 20px 15px;
+          text-align: center;
+          padding-top: 8px;
+        }
+        li.hidden{
+          background-color: #ffd9eb;
+        }
+      }
+      &__wrapper3{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        p{
+          border: none;
+          background-color: white;
+          color: #ff59c3;
+          border-radius: 4px;
+          width: 200px;
+          line-height: 40px;
+          text-align: center;
+        }
+      }
     }
   }
   
