@@ -158,6 +158,7 @@
     }
     &__in-category{
       @include HideWrapper;
+      display: none;
       &__wrapper{
         width: 95%;
         margin-bottom: 10px;
@@ -171,6 +172,35 @@
           background-color: white;
           display: inline-block;
           margin: 10px;
+          &__in{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-top: 20px;
+            &__arrow{
+              position: absolute;
+              bottom: 10px;
+              left: 10px;
+              color: #646166;
+            }
+            &__icon-box{
+              
+              &__icon{
+
+              }
+            }
+          }
+          &__text{
+            text-align: center;
+            font-size: 14px;
+            color: #646166;
+          }
+          &__cate{
+            text-align: center;
+            font-size: 12px;
+            color: #bcbabd;
+          }
         }
         a{
           font-size: 14px;
