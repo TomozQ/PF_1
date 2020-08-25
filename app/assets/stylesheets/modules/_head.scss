@@ -22,10 +22,6 @@
   text-align: center;
 }
 
-@mixin Head_under_hover{
-  background-color: #ffd9eb;
-  color: #ff59c3;
-}
 
 @mixin HideWrapper{
   width: 960px;
@@ -33,9 +29,6 @@
   background-color: #ffd9eb;
   position: absolute;
   top: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .head{
@@ -118,14 +111,8 @@
       &__cat{
         @include Head_under;
       }
-      &__cat:hover{
-        @include Head_under_hover
-      }
       &__bra{
         @include Head_under;
-      }
-      &__bra:hover{
-        @include Head_under_hover
       }
       &__ser{
         margin-left: 20px;
@@ -161,10 +148,11 @@
       display: none;
       &__wrapper{
         width: 95%;
-        margin-bottom: 10px;
+        margin: 0 auto;
         p{
           color: #646166;
           font-size: 12px;
+          margin-top: 40px;
         }
         &__image-box{
           width: 157px;
@@ -184,12 +172,6 @@
               left: 10px;
               color: #646166;
             }
-            &__icon-box{
-              
-              &__icon{
-
-              }
-            }
           }
           &__text{
             text-align: center;
@@ -204,10 +186,11 @@
         }
         a{
           font-size: 14px;
-          color: #a6d0ff;
+          color: #5aa8ff;
           margin-left: 80px;
           cursor: pointer;
           text-decoration: none;
+          font-weight: bold;
         }
       }
       
