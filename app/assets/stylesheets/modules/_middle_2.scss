@@ -16,5 +16,43 @@
 	display: flex;
 }
 .loopSlider2 .loopslider_wrap2 ul li{
-	width: 190px;
+  width: 190px;
+  height: 100%;
+  opacity: 0.3;
+}
+
+.loopSlider2 .loopslider_wrap2 ul li.product1:hover{
+  opacity: 1;
+}
+
+.loopSlider2 .loopslider_wrap2 ul li.product2:hover{
+  opacity: 1;
+}
+
+.loopSlider2 .loopslider_wrap2 ul li.product3:hover{
+  opacity: 1;
+}
+
+.loopSlider2 .loopslider_wrap2 ul li.product4:hover{
+  opacity: 1;
+}
+
+.loopSlider2 .loopslider_wrap2 ul li.product5:hover{
+  opacity: 1;
+}
+
+.loopSlider2 .loopslider_wrap2 ul li.product6:hover{
+  opacity: 1;
+}
+
+.loopSlider2 .loopslider_wrap2 ul li.product7:hover{
+  opacity: 1;
+}
+
+.loopSlider2 .loopslider_wrap2 ul li.product8:hover{
+  opacity: 1;
+}
+
+.loopSlider2 .loopslider_wrap2 ul li.product9:hover{
+  opacity: 1;
 }

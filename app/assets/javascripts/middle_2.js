@@ -11,3 +11,7 @@ function loopsliderPosition2(){
 		loopsliderPosition2();
 	},35000);
 };
+
+$(function(){
+  
+});
