@@ -1,0 +1,248 @@
+@mixin Text{
+  color: #646166;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@mixin Icon {
+  height: 60px;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+  color: #bcbabd;
+}
+
+@mixin Head_under{
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 20px;
+  width: 82px;
+  line-height: 48px;
+  text-align: center;
+}
+
+
+@mixin HideWrapper{
+  width: 960px;
+  height: 450px;
+  background-color: #ffd9eb;
+  position: absolute;
+  top: 48px;
+}
+
+.head{
+  width: 100%;
+  &__top{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__wrapper{
+      width: 960px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      &__content1{
+
+      }
+      &__content2{
+        @include Text;
+        margin-left: 40px;
+      }
+      &__content3{
+        @include Icon;
+        margin-left: 100px;
+        &__icon{
+          font-size: 20px;
+        }
+        &__text{
+          font-size: 12px;
+        }
+      }
+      &__content4{
+        @include Icon;
+        margin-left: 40px;
+        &__icon{
+          font-size: 20px;
+        }
+        &__text{
+          font-size: 12px;
+        }
+      }
+      &__content5{
+        @include Icon;
+        margin-left: 40px;
+        &__icon{
+          font-size: 20px;
+        }
+        &__text{
+          font-size: 12px;
+        }
+      }
+      &__content6{
+        border-left: 1px solid rgb(227,226,228);
+        line-height: 40px;
+        margin-left: 20px;
+        a{
+          @include Text;
+          text-decoration: none;
+          cursor: pointer;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+  &__under{
+    width: 100%;
+    height: 48px;
+    background-color: #ff59c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &__wrapper{
+      height: 100%;
+      width: 960px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__cat{
+        @include Head_under;
+      }
+      &__bra{
+        @include Head_under;
+      }
+      &__ser{
+        margin-left: 20px;
+        position: relative;
+        input{
+          border: none;
+          background-color: #ff7dd9;
+          border-radius: 20px;
+          width: 424px;
+          height: 32px;
+          display: inline-block;
+          padding-left: 40px;
+          color: white;
+        }
+        input::placeholder{
+          color: white;
+          font-size: 12px;
+        }
+        input:focus{
+          outline: 0;
+        }
+        i{
+          display: block;
+          color: white;
+          position: absolute;
+          top: 8px;
+          left: 10px;
+        }
+      }
+    }
+    &__in-category{
+      @include HideWrapper;
+      display: none;
+      &__wrapper{
+        width: 95%;
+        margin: 0 auto;
+        p{
+          color: #646166;
+          font-size: 12px;
+          margin-top: 40px;
+        }
+        &__image-box{
+          width: 157px;
+          height: 157px;
+          background-color: white;
+          display: inline-block;
+          margin: 10px;
+          &__in{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-top: 20px;
+            &__arrow{
+              position: absolute;
+              bottom: 10px;
+              left: 10px;
+              color: #646166;
+            }
+          }
+          &__text{
+            text-align: center;
+            font-size: 14px;
+            color: #646166;
+          }
+          &__cate{
+            text-align: center;
+            font-size: 12px;
+            color: #bcbabd;
+          }
+        }
+        a{
+          font-size: 14px;
+          color: #5aa8ff;
+          margin-left: 80px;
+          cursor: pointer;
+          text-decoration: none;
+          font-weight: bold;
+        }
+      }
+      
+    }
+    &__in-brand{
+      @include HideWrapper;
+      display: none;
+      &__wrapper{
+        p{
+          color: #646166;
+          margin-top: 20px;
+          margin-left: 20px;
+          font-weight: bold;
+        }
+      }
+      &__wrapper2{
+        display: flex;
+        ul{
+          margin-left: 10px;
+        }
+        li{
+          border: none;
+          width: 54px;
+          height: 40px;
+          background-color: white;
+          color: #ff59c3;
+          border-radius: 4px;
+          margin: 20px 15px;
+          text-align: center;
+          padding-top: 8px;
+          cursor: pointer;
+        }
+        li.hidden{
+          background-color: #ffd9eb;
+        }
+      }
+      &__wrapper3{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        p{
+          border: none;
+          background-color: white;
+          color: #ff59c3;
+          border-radius: 4px;
+          width: 200px;
+          line-height: 40px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  
+}
+

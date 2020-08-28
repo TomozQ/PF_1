@@ -1,2 +1,19 @@
-.top
-  これはトップページです。
+= render "head"
+= render "middle_1"
+= render "middle_2"
+= render "middle_3"
+= render "middle_4"
+= render "middle_5"
+= render "middle_6"
+= render "foot"
+
+:javascript
+  $(function(){
+    loopTopSlider();
+    loopsliderPosition();
+  });
+
+  $(function(){
+    loopTopSlider2();
+    loopsliderPosition2();
+  });
