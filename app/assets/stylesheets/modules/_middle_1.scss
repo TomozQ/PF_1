@@ -51,7 +51,7 @@ li.item1 .caption1 {
 }
 li.item1 .mask1 {
 	@include Mask;
-	background-color:	rgba(0,0,0,0.4);
+	background-color:	rgba(29, 15, 226, 0.4);
 }
 li.item1:hover .mask1 {
 	@include ListHover;
@@ -73,7 +73,7 @@ li.item3 .caption3 {
 }
 li.item3 .mask3 {
 	@include Mask;
-	background-color:	rgba(181, 197, 38, 0.4);
+	background-color:	rgba(10, 10, 10, 0.4);
 }
 li.item3:hover .mask3 {
 	@include ListHover;
