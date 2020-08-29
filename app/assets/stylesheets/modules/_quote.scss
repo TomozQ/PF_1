@@ -1,0 +1,41 @@
+.quote{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  &__wrapper{
+    width: 90%;
+    display: none;
+    &__contents{
+      &__content{
+        font-size: 16px;
+        margin-top: 20px;
+        p.title_inyou{
+          color: darkgray;
+          font-size: 28px;
+        }
+        a{
+          text-decoration: none;
+          font-size: 12px;
+        }
+        p{
+          margin-bottom: 10px;
+        }
+        p.close{
+          margin-top: 20px;
+          margin-bottom: 20px;
+          cursor: pointer;
+          width: 100px;
+          background-color: darkgrey;
+          position: absolute;
+          right: 30px;
+          text-align: center;
+          line-height: 40px;
+          font-weight: bold;
+          border-radius: 6px;
+          color: white;
+          box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+        }
+      }
+    }
+  }
+}
